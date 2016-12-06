@@ -1,0 +1,322 @@
+@import url(font-awesome.min.css);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+@import url(https://necolas.github.io/normalize.css/5.0.0/normalize.css);
+@import url(grid.css);
+
+ @font-face {
+    font-family: 'Montserrat', sans-serif;
+/*    src: url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);*/
+ }
+
+body{
+	background: #f0f0f0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.header h1{
+	text-transform: uppercase;
+	text-align: center;
+	padding: 3rem;
+	font-size: 4rem;
+
+}
+
+
+.header p{
+	color: #333;
+	font-size: 2rem;
+	text-align: center;
+	padding:2rem;
+}
+
+.header img{
+	 width: 100%;
+	 height: 20%;
+	 z-index: 1;
+}
+
+.header .opacity{
+	margin-left: calc(0.5/ 12 * 100%);
+	margin-top: 5%;
+	position: absolute;
+	background: #f0f0f0;
+	background: rgba(240, 240, 240, 0.7);
+	z-index: 1;
+	font-size: 2rem;
+}
+.header-sm,
+.header-sm div{
+	display: none;
+}
+
+/*Оформление меню*/
+
+.main-menu{
+	position: ;
+}
+
+.main-menu >li{
+	text-align: center;
+	display: inline-block;
+	position: relative;
+
+}
+
+.sub-menu{
+	position: absolute;
+	display: none;
+	list-style: none;
+	margin-left: 1rem: 
+
+ }
+
+.main-menu li:hover .sub-menu{
+	display: block;
+
+}
+
+.sub-menu li{
+	display:block;
+	font-size: 1rem;
+}
+
+/*Ссылки меню*/
+
+.main-menu a {
+	color:#333;
+	display:block;
+	padding: 1rem;
+	text-decoration:none;
+	margin-left: 1%
+}
+
+.main-menu a:hover{
+	margin-left: ;
+	color: #80DADB;
+	transition: all.7s ease;
+	background: #333;
+	border-radius: 20px;
+}
+
+.main-menu a:hover:last-child{
+	margin-right:1%;
+}
+
+.main-menu a:active{
+	background: #f0f0f0;
+	color: #333;
+}
+
+h2{
+	margin-top: 10%;	
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.block{
+	height: auto;
+	border: 0.5rem solid silver;
+	margin-top: 5%;
+	text-align: center;
+}
+.block h3,
+.block p{
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.block h3 {
+	font-size: 2rem;
+}
+.block i{
+		font-size: 10rem;
+		color: #80DADB;
+}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+	height: 30rem;
+	position: relative;
+}
+
+.slider li{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-origin: padding-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top:0;
+	display: none;
+
+}
+
+/*.slider li.active{
+	display: block;
+}
+
+.slider .slider1{
+	background-image: url(http://lorempixel.com/400/200/);
+}
+
+.slider .slider2{
+	background-image: url(http://lorempixel.com/400/200/sports/1/);
+}
+
+.slider .slider3{
+	background-image: url(http://lorempixel.com/400/200/);
+}
+
+.slider .arrow-prew,
+.slider .arrow-next{
+	color: #aaa;
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	height: 6.4rem;
+	margin-top: -3.2rem;
+}
+.slider .arrow-next{
+	right: 0;
+}*/
+
+.modal {
+    background: #fff;
+    
+    position: absolute;
+    top: -50%;
+    width: 60%;
+    left: 20%;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0,0,0,.25);
+}
+
+.modal:target {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+    top: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+.btn{
+	float:left;
+	margin-left: 50%;
+	padding-bottom: 3rem;
+	
+}
+
+
+
+
+
+
+@media only screen and (min-width: 48em) and (max-width: 59.9375em) {  /* 768px - 959px */
+    .header p{
+        font-size: 1.2rem;
+    }
+
+    .main-menu li:hover .sub-menu{
+	display: none;
+	}
+
+	.main-menu a:hover{
+	background: initial;
+	color: initial;
+	margin:0;
+	transition:none;
+	}
+
+	.main-menu a {
+	margin-left: 0;
+	color: #000;
+	}
+
+	.main-menu a:hover:last-child{
+	margin:0;
+	}
+
+	.main-menu a:active{
+	background: silver;
+	border-radius:0;
+	}
+	h2{
+		font-size: 2rem;
+	}
+ 
+ } 
+
+
+
+@media only screen and (max-width: 47.9375em) { /* < 767px */
+    img {
+    	display: none;
+    }
+
+	.header-sm,
+	.header-sm div{
+		display: block;
+		text-align: center;
+	}
+	
+	.hidden{
+		background: #80DADB;
+		padding-bottom: 2rem;
+		margin-bottom: 0;
+	}
+	.hidden span{
+		font-size: 1.5rem;
+	}
+    .opacity {
+        display: none;
+    }
+
+    .main-menu li:hover .sub-menu{
+	display: none;
+	}
+
+	.main-menu a:hover{
+	background: initial;
+	color: initial;
+	transition:none;
+
+	}
+
+	.main-menu a:hover:last-child{
+		margin:0;
+	}
+
+	.main-menu a:active{
+		background: silver;
+		border-radius:0;
+	}
+	.main-menu a {
+		margin-left: 0;
+		color: #000;
+	}
+	.block{
+		border: none;
+	}
+	.block {
+		border-bottom: 3px solid #80DADB;
+
+		
+	}
+	h2,
+	.block h3 {
+		font-size: 1.3rem;
+		margin-top: 0;
+	}
+}
